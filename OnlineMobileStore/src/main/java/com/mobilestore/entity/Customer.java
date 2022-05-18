@@ -1,7 +1,5 @@
 package com.mobilestore.entity;
 
-
-
 public class Customer {
 	
 	private int customerId;
