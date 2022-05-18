@@ -11,19 +11,18 @@ public class Order {
 	 Customer customer;
 	 String status;
 	 
-	 public order() {
-		 super();
-		 
+	 public void order() {
+
 	 }
-	public order(LocalDate orderDate, LocalDate dispatchDate, int quantity, int cost, int totalcaost,
-			com.mobilestore.entity.customer customer, String status) {
-		super();
+	public void order(LocalDate orderDate, LocalDate dispatchDate, int quantity, int cost, int totalcaost,
+			Customer customer, String status) {
+		
 		this.orderDate = orderDate;
 		this.dispatchDate = dispatchDate;
 		this.quantity = quantity;
 		this.cost = cost;
 		this.totalcost = totalcaost;
-		this.Customer = customer;
+		this.customer = customer;
 		this.status = status;
 	}
 	public LocalDate getOrderDate() {
@@ -60,7 +59,7 @@ public class Order {
 		return customer;
 	}
 	public void setCustomer(Customer customer) {
-		this.Customer = customer;
+		this.customer = customer;
 	}
 	public String getStatus() {
 		return status;
