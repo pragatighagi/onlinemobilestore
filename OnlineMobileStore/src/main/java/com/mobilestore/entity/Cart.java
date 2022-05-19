@@ -14,6 +14,9 @@ public Cart(int cartID, Customer customer, List<com.mobilestore.entity.mobile> m
 	this.quantity = quantity;
 	this.cost = cost;
 }
+public Cart(User savedUser) {
+	// TODO Auto-generated constructor stub
+}
 public int getCartID() {
 	return cartID;
 }

@@ -5,7 +5,7 @@ import com.mobilestore.entity.User;
 
 	
 	public interface UserService {
-	    User findOne(String email);
+	    User findOne(String username);
 
 	    Collection<User> findByRole(String role);
 

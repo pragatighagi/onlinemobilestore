@@ -1,19 +1,22 @@
 package com.mobilestore.entity;
 
 public class User {
-	int userId;
+	  int userId;
 	String username;
-	String role;
-	public User()
+	  String role;
+	
+	 public User()
 	{
 		super();
 	}
+	 
 	public User(int userId, String username, String role) {
 		super();
 		this.userId = userId;
 		this.username = username;
 		this.role = role;
 	}
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -31,6 +34,11 @@ public class User {
 	}
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public void setCart(Cart savedCart) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
