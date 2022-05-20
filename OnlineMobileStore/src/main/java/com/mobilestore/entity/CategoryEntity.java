@@ -7,18 +7,21 @@ package com.mobilestore.entity;
 import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.data.annotation.Id;
 
+import lombok.Data;
+
 	@Data
 	@Entity
 	@Table(name = "category")
 	public class CategoryEntity {
 		@Id
-		@Generated(strategy = GenerationType.IDENTITY, value = { "" })
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		@Column(name = "categoryId")
 		private int categoryId;
 		@Column(name = "categoryName")
