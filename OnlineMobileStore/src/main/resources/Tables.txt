@@ -1,0 +1,9 @@
+create database mobiledb;
+\c mobiledb;
+
+create table category(categoryId serial primary key, categoryName varchar(25));
+
+create table mobile (mobileId serial primary key, mobileName varchar(25), mobileCost float, modelNumber varchar(20), companyName varchar(20), mfd date, categoryId int REFERENCES category (categoryId));
+
+URL:
+http://localhost:8081/mobileapp/swagger-ui/index.html
