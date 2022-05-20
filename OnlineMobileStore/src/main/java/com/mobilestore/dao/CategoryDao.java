@@ -1,17 +1,12 @@
 package com.mobilestore.dao;
 
-
-
-
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.mobilestore.entity.CategoryEntity;
-
-
-
 
 	@Repository
 	public interface CategoryDao extends JpaRepository<CategoryEntity, Integer> {
@@ -21,7 +16,7 @@ import com.mobilestore.entity.CategoryEntity;
 
 		Optional<CategoryEntity> findById(Integer catId);
 
-		void save(CategoryEntity entity);
+		void Save(CategoryEntity entity);
 	}
 	
 	

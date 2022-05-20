@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.model.Category;
-import com.capgemini.model.Response;
-import com.capgemini.service.CategoryService;
+import com.mobilestore.model.Category;
+import com.mobilestore.model.Response;
+import com.mobilestore.service.CategoryService;
+
 
 @RestController
 @RequestMapping("/categories")
