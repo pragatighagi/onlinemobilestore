@@ -1,13 +1,8 @@
 package com.mobilestore.model;
 
-
-	
-
 import lombok.Data;
 
-
-
-	@Data
+@Data
 	public class Cart{
 	private int cartId;
 	private Customer customer;

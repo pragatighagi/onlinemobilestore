@@ -1,5 +1,7 @@
 package com.mobilestore.entity;
 
+import com.mobilestore.model.User;
+
 import lombok.Data;
 
 @Data
