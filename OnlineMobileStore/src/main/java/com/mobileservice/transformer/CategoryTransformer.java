@@ -14,7 +14,7 @@ public class CategoryTransformer {
 		return null;
 	}
 
-	public static com.mobilestore.entity.CategoryEntity transformCategoryEntity(com.mobilestore.entity.CategoryEntity entity) {
+	public static CategoryEntity transformCategoryEntity(com.mobilestore.entity.CategoryEntity entity) {
 		if (entity != null) {
 			com.mobilestore.entity.CategoryEntity newCate = new com.mobilestore.entity.CategoryEntity();
 			newCate.setCategoryId(entity.getCategoryId());

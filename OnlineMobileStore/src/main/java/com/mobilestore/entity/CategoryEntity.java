@@ -1,12 +1,15 @@
 package com.mobilestore.entity;
 
 
+import java.util.List;
 
-	import java.util.List;
-
-import javax.annotation.Generated;
-
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import lombok.Data;
 
@@ -15,7 +18,7 @@ import lombok.Data;
 	@Table(name = "category")
 	public class CategoryEntity {
 		@Id
-		@Generated(strategy = GenerationType.IDENTITY)
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		@Column(name = "categoryId")
 		private int categoryId;
 		@Column(name = "categoryName")

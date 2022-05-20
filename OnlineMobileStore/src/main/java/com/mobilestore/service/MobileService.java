@@ -2,8 +2,9 @@ package com.mobilestore.service;
 
 import java.util.List;
 
-import com.capgemini.model.Mobile;
-import com.capgemini.model.Response;
+import com.mobilestore.model.Mobile;
+import com.mobilestore.model.Response;
+
 
 public interface MobileService {
 		
