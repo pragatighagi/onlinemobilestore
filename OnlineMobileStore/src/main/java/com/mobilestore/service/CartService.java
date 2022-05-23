@@ -18,4 +18,8 @@ public interface CartService {
 	public Response<Cart> getCartByCustomer(Customer cartCustomer);
 	public Response<Cart> getCartByQuality(Integer cartQuantity);
     public Response<Cart> getCartByCost(Integer cartCost);
+	Response<Cart> addCart(Cart cart);
+	Response<Cart> updateCart(Cart cart);
+	
+	<cartDao> Response<List<Cart>> getAllCart();
 }

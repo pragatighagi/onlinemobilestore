@@ -19,5 +19,11 @@ public interface OrderService {
     public Response<Order> getCartByCost(Integer orderCost);
     public Response<Order> getCartByStatus(String orderStatus);
     public Response<Order> getCartBydispatchDate(LocalDate orderdispatchDate );
+	public Response<com.mobilestore.model.Order> addOrder(com.mobilestore.model.Order order);
+	public Response<com.mobilestore.model.Order> updateOrder(com.mobilestore.model.Order order);
+	public Response<List<com.mobilestore.model.Order>> getAllOrder();
+	public Response<com.mobilestore.model.Order> getOrder(Integer catId);
+	
+	
 }
 

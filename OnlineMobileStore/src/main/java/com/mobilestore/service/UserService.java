@@ -13,5 +13,10 @@ public interface UserService {
 	public Response<User> getCategory(Integer userId);
 	public Response<User> getCategoryByName(String userUserName);
 	public Response<User> getCategoryByRole(String userRole);
+	Response<com.mobilestore.model.User> addUser(com.mobilestore.model.User User);
+	Response<com.mobilestore.model.User> updateUser(com.mobilestore.model.User user);
+	Response<List<com.mobilestore.model.User>> getAllUser();
+	Response<com.mobilestore.model.User> getUser(Integer catId);
+	Response<com.mobilestore.model.User> getUserByName(String catName);
 }
 

@@ -8,6 +8,10 @@ import lombok.Data;
 	private Customer customer;
 	private int quantity;
 	private int cost;
-    private mobile List<mobile> ;
+    private mobile List
+	public Object getCartName() {
+		// TODO Auto-generated method stub
+		return null;
+	}<mobile> ;
 
 }
