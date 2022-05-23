@@ -2,8 +2,9 @@ package com.mobilestore.service;
 
 import java.util.List;
 
-import com.mobilestore.entity.Customer;
+
 import com.mobilestore.model.Cart;
+import com.mobilestore.model.Customer;
 import com.mobilestore.model.Response;
 
 

@@ -2,8 +2,9 @@ package com.mobilestore.service;
 
 import java.util.List;
 
-import com.mobilestore.entity.User;
+
 import com.mobilestore.model.Response;
+import com.mobilestore.model.User;
 
 public interface UserService {
 	public Response<User> addCategory(User user);

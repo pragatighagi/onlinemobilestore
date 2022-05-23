@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.persistence.criteria.Order;
 
-import com.mobilestore.entity.Customer;
+import com.mobilestore.model.Customer;
 import com.mobilestore.model.Response;
 
 public interface OrderService {
