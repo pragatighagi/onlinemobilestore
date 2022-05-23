@@ -9,6 +9,8 @@ import com.mobilestore.entity.MobileEntity;
 
 
 
+
+
 @Repository
 public interface MobileDao extends JpaRepository<MobileEntity, Integer> {
 	List<MobileEntity> findAllByCompanyName(String compName);

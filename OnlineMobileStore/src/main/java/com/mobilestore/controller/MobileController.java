@@ -59,4 +59,8 @@ public class MobileController {
 	}
 
 }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> refs/remotes/origin/pragati
