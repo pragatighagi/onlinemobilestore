@@ -1,6 +1,6 @@
 package com.mobileservice.transformer;
 
-import com.capgemini.entity.MobileEntity;
+import com.mobilestore.entity.MobileEntity;
 import com.mobilestore.model.Mobile;
 
 public class MobileTransformer {
