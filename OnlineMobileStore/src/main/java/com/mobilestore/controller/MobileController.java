@@ -1,26 +1,30 @@
 package com.mobilestore.controller;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.model.Mobile;
-import com.capgemini.model.Response;
-import com.capgemini.service.MobileService;
+import com.mobilestore.model.Mobile;
+import com.mobilestore.model.Response;
+import com.mobilestore.service.MobileService;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.models.media.MediaType;
 
 @RestController
 @RequestMapping("/mobiles")
+
+
+
+
+
 public class MobileController {
-	
 	@Autowired
 	private MobileService mobileService; 
 	
@@ -55,3 +59,4 @@ public class MobileController {
 	}
 
 }
+
