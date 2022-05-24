@@ -1,5 +1,6 @@
 package com.mobilestore.model;
 
+import java.util.Collection;
 import java.util.List;
 
 import com.mobilestore.entity.CartEntity;
@@ -22,12 +23,32 @@ public class Response<T> {
 		
 	}
 
-	public void setData(List<Cart> categories) {
+	public void setData(List<Mobile> mobiles) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void setData(CartEntity newCate) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setData(Mobile transformMobileEntity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setData(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setData(User newUser) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setData(UserEntity newUser) {
 		// TODO Auto-generated method stub
 		
 	}
