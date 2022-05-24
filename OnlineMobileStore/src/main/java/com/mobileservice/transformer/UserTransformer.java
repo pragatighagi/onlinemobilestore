@@ -4,7 +4,7 @@ import com.mobilestore.model.User;
 
 	public class UserTransformer {
 
-			public static com.mobilestore.entity.UserEntity transformUser(com.mobilestore.entity.UserEntity user) {
+			public static com.mobilestore.entity.UserEntity transformUser(User user) {
 				if (user != null) {
 					UserEntity entity = new com.mobilestore.entity.UserEntity();
 					entity.setUserId(user.getUserId());

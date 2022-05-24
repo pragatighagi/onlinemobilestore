@@ -2,7 +2,7 @@ package com.mobilestore.model;
 
 import lombok.Data;
 
-@Data
+String
 	public class Cart{
 	private int cartId;
 	private Customer customer;
@@ -12,6 +12,10 @@ import lombok.Data;
 	public Object getCartName() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	public void setCartId(int i) {
+		// TODO Auto-generated method stub
+		
 	}<mobile> ;
 
 }

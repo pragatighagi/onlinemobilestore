@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.mobileservice.transformer.UserTransformer;
+import com.mobilestore.entity.UserEntity;
 import com.mobilestore.model.AppError;
 import com.mobilestore.model.Response;
 import com.mobilestore.model.User;
@@ -21,7 +23,7 @@ public class UserServiceImpl implements UserService{
 	public Response<User> addUser(User User) {
 		Response<User> response = new Response<>();
 		try {
-			UserEntity entity = UserDao.findByUserId(User.getUserId());
+			UserEntity entity = User.setUserId(User.getUserId());
 			if (entity != null) {
 				AppError error = new AppError();
 				error.setCode("ERR_ADD_User");
@@ -30,8 +32,8 @@ public class UserServiceImpl implements UserService{
 			} else {
 				User.setUserId(0);
 				entity = UserTransformer.transformUser(User);
-				userDao.save(entity);
-				User newCate = UserTransformer.transformUserEntity(entity);
+				User.save(entity);
+				UserEntity newCate = UserTransformer.transformUserEntity(entity);
 				response.setData(newCate);
 			}
 		} catch (Exception e) {
@@ -49,9 +51,9 @@ public class UserServiceImpl implements UserService{
 		try {
 			UserEntity entity = UserTransformer.transformUser(user);
 
-			userDao.save(entity);
+			UserDao.save(entity);
 
-			User newCate = UserTransformer.transformUserEntity(entity);
+			UserEntity newCate = UserTransformer.transformUserEntity(entity);
 			response.setData(newCate);
 		} catch (Exception e) {
 			AppError error = new AppError();
@@ -66,7 +68,7 @@ public class UserServiceImpl implements UserService{
 	public Response<List<User>> getAllUser() {
 		Response<List<User>> response = new Response<>();
 		try {
-			List<UserEntity> entities = userDao.findAll();
+			List<UserEntity> entities = UserDao.findAll();
 			List<User> categories = new ArrayList<>();
 			if (entities != null) {
 				for (UserEntity entity : entities) {
@@ -108,7 +110,7 @@ public class UserServiceImpl implements UserService{
 	public Response<User> getUserByName(String catName) {
 		Response<User> response = new Response<>();
 		try {
-			UserEntity entity = userDao.findByUserName(catName);
+			UserEntity entity = UserDao.findByUserName(catName);
 			if (entity != null) {
 				User newCate = UserTransformer.transformUserEntity(entity);
 				response.setData(newCate);
@@ -120,6 +122,42 @@ public class UserServiceImpl implements UserService{
 			response.setError(error);
 		}
 		return response;
+	}
+
+	@Override
+	public Response<User> addCategory(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<User> updateCategory(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<List<User>> getAllCategory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<User> getCategory(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<User> getCategoryByName(String userUserName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Response<User> getCategoryByRole(String userRole) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
